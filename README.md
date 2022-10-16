@@ -12,3 +12,8 @@ study python webscraping
 + XPath
 + regex
 + User Agent
+
+
+### what to do?
+request - basic, imgdown, csv
+selenium - basic, wait, action, headless
