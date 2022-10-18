@@ -10,16 +10,13 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 browser = webdriver.Chrome(options=chrome_options)
 browser.maximize_window()
 
-browser.get(
-  "https://www.changwon.ac.kr/portal/na/ntt/selectMainAtNttList.do?mi=14003")
+browser.get("https://www.changwon.ac.kr/portal/na/ntt/selectMainAtNttList.do?mi=14003")
 browser.find_element(By.ID, "searchValue").send_keys("english")
-browser.find_element(By.XPATH,
-                     "//*[@id='srchForm']/fieldset/div/button").click()
+browser.find_element(By.XPATH,"//*[@id='srchForm']/fieldset/div/button").click()
 
 browser.find_element(By.ID, "searchValue").clear()
 browser.find_element(By.ID, "searchValue").send_keys("toefl")
-browser.find_element(
-  By.XPATH, "//*[@id='srchForm']/fieldset/div/button").send_keys(Keys.ENTER)
+browser.find_element(By.XPATH, "//*[@id='srchForm']/fieldset/div/button").send_keys(Keys.ENTER)
 
 time.sleep(5)
 browser.quit()
