@@ -7,13 +7,12 @@ study python webscraping
 3. lxml
 4. selenium
 
-### basic knowledge
+### Basic Knowledge
 + HTML, CSS, JS
 + XPath
 + regex
 + User Agent
 
-
-### what to do?
-request - basic, imgdown, csv
-selenium - basic, wait, action, headless
+#### Reference
+how to use selenium at the relplit
+<https://replit.com/talk/learn/Python-Selenium-Tutorial-The-Basics/148030>
