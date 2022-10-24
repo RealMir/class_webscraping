@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 
 def get_weather(browser):
-  browser.get("https://search.naver.com/search.naver?query=부산날씨")
+  browser.get("https://search.naver.com/search.naver?query=창원날씨")
   soup = BeautifulSoup(browser.page_source,"lxml")
   
   now_weathers = soup.find("div",attrs={"class":"_today"})
@@ -27,4 +27,4 @@ def get_weather(browser):
   print(f"{now_weather} ({lowesttemp} / {highesttemp})")
   print(f"{am_rainfall.replace(' ',' 강수확률 ')} / {pm_rainfall.replace(' ',' 강수확률 ')}")
   print(f"미세먼지 {dust[-1].replace(' ','㎍/m³ ')}")
-  print(f"초미세먼지 {ultradust[-1].replace(' ','㎍/m³ ')}")
+  print(f"초미세먼지 {ultradust[-1].replace(' ','㎍/m³ ')}\n")
