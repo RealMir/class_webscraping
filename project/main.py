@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from weather import get_weather
 from majornews import get_major_news
 from financenews import get_finance_news
+from todayenglish import get_today_english
 
 chrome_options = Options()
 chrome_options.add_argument("--no-sandbox")
@@ -13,3 +14,4 @@ browser = webdriver.Chrome(options=chrome_options)
 get_weather(browser)
 get_major_news()
 get_finance_news()
+get_today_english()
